@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save the Bunny!</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./game-project.css" />
+  </head>
+  <body>
+    <h1>Save the Bunny!</h1>
+    <!----------START PAGE---------->
+    <section id="section-start">
+      <div id="btn-input">
+        <!--choose number of player and get and display the name-->
+        <!-- <button id="btn-player">Player1</button> -->
+        <div>
+          <span id="name">Player's Name: </span>
+          <span id="name-player">--</span>
+        </div>
+        <div>
+          <input id="input-name" type="text" />
+          <button id="btn-submit">Submit</button>
+        </div>
+
+        <!-- <button id="btn-player2">Player2</button>
+				<div id="name2">Player's Name: <span id="name-player2" class="player-name"></span></div>
+				<div>
+					<input id="input-name2" type="text">
+						<button id="btn-submit2">Submit</button>
+				</div> -->
+      </div>
+      <!--click start button and go to game page-->
+      <button id="btn-start">Start</button>
+    </section>
+
+    <!----------GAME PAGE---------->
+    <section id="section-game">
+      <div>
+        Level of Difficulty:
+        <button id="btn-lv1">Lv1</button>
+        <button id="btn-lv2">Lv2</button>
+        <button id="btn-lv3">Lv3</button>
+      </div>
+
+      <button id="btn-play">Play</button>
+      <button id="btn-pause">Pause</button>
+
+      <form id="guess">
+        <input id="input-guess" type="text" />
+        <button id="submit-guess">Submit</button>
+      </form>
+
+      <div id="logs">Logs:</div>
+
+      <!-- <input id="input-number" type="text">
+			<div>Logs:</div> -->
+
+      <div id="attempts">Attmepts:</div>
+    </section>
+
+    <!----------GAME OVER PAGE---------->
+    <section id="section-game-over"></section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./game-project.js"></script>
+  </body>
+</html>

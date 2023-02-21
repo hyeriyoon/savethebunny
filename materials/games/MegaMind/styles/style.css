@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+#solution,
+#guesses {
+  display: flex;
+}
+
+.slot,
+.code {
+  width: 2em;
+}
+
+.face-down {
+  background-color: lightslategray;
+}
+
+.face-up {
+  background-color: transparent;
+}
+
+.history-row {
+  min-height: 2em;
+}
+
+.history-row .slot {
+  min-height: 2em;
+  display: inline-block;
+}

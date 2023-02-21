@@ -1,0 +1,168 @@
+body{
+    width: 700px;
+    height: 780px;
+    border: 7px rgb(103, 176, 154) solid;
+    left:0;
+    right:0;
+    margin: 1rem auto;
+    background-image: url(../image/carrot-bgrd.jpg);
+   background-size: cover;
+}
+h1{
+    color: rgb(103, 176, 154);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+audio{
+    position: absolute;
+    right: 3rem;
+    top:2.5rem;
+   
+}
+#div-name{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#div-img{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+#div-img-inside{
+    position: relative;
+}
+#name{
+    margin: 1rem 1rem;
+    color:rgb(90, 90, 90);
+}
+button{
+    padding: .5rem;
+    color:rgb(90, 90, 90);
+    background-color: rgb(246, 186, 76);
+    border: none;
+    border-radius: 1rem;
+    margin: 0.5rem 0 0 0;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(103, 176, 154);
+}
+#btn-submit-name{
+    margin-left:1rem;
+}
+#btn-input{
+    display:flex;
+    justify-content: space-around;
+    padding: 5rem;
+}
+img{
+    width: 350px;
+    height: auto;
+}
+#section-level{
+    text-align: center;
+}
+#section-guess{
+   margin-left: 200px;
+}
+#section-game-over{
+    text-align: center;
+    top: 15rem;
+}
+#btn-play{
+    padding: 0.5rem 5rem;
+}
+.btn-pause{
+    background-color: rgb(103, 176, 154);
+}
+.btn-play{
+    background-color: rgb(246, 186, 76);
+}
+#div-playnagain{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.active{
+    background-color: rgb(103, 176, 154);
+    color: white;
+}
+.inactive{
+    background-color: rgb(246, 186, 76);
+    color: black;
+}
+#logs{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*******information pop-up ************/
+#section-popup{
+    width: 460px;
+    background: rgb(240, 240, 240);
+    border-radius: 6px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+#about-game{
+    font-size:1.5rem;
+    text-align: center;
+    background-color: rgb(103, 176, 154);
+    padding: 1rem 0;
+    font-weight: 800;
+    color:rgb(255, 255, 255);
+}
+#des-game{
+    text-align: left;
+    padding: 0 2rem;
+    color: rgb(86, 147, 128);
+}
+.instruction{
+    font-weight: 800;
+}
+#btn-info{
+    /* border: solid 3px white; */
+    color : rgb(86, 147, 128);
+    border-radius: 0;
+    align-items: center;
+    position: absolute;
+    right:0.3rem;
+    bottom: 0.6rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 0.25rem 0.3rem;
+}
+
+/*******information pop-up ************/
+#section-game-over{
+    width:460px;
+    padding: 1.5rem;
+    background: rgb(241, 124, 40);
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    vertical-align: center;
+    overflow: hidden;
+    font-weight: 800;
+    margin:0;
+}
+h3{
+    font-weight: 800;
+}
