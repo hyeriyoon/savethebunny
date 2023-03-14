@@ -1,12 +1,14 @@
 body{
-    width: 700px;
-    height: 780px;
+    min-width: 360px;
+    max-width: 700px;
+    max-height: 780px;
     border: 7px rgb(103, 176, 154) solid;
     left:0;
     right:0;
     margin: 1rem auto;
+    padding: .5rem 0 20rem;
     background-image: url(../image/carrot-bgrd.jpg);
-   background-size: cover;
+    background-size: cover;
 }
 h1{
     color: rgb(103, 176, 154);
@@ -20,6 +22,7 @@ audio{
     position: absolute;
     right: 3rem;
     top:2.5rem;
+    width: 15rem;
    
 }
 #div-name{
@@ -43,11 +46,11 @@ audio{
     color:rgb(90, 90, 90);
 }
 button{
-    padding: .5rem;
+    padding: .3rem .5rem;
     color:rgb(90, 90, 90);
-    background-color: rgb(246, 186, 76);
+    background-color: rgba(253, 195, 88, 0.886);
     border: none;
-    border-radius: 1rem;
+    border-radius: .5rem;
     margin: 0.5rem 0 0 0;
     cursor: pointer;
 }
@@ -63,14 +66,16 @@ button:hover{
     padding: 5rem;
 }
 img{
-    width: 350px;
+    max-width: 350px;
     height: auto;
 }
 #section-level{
     text-align: center;
 }
 #section-guess{
-   margin-left: 200px;
+   /* margin-left: 200px; */
+   width: fit-content;
+   margin: .5rem auto 0;
 }
 #section-game-over{
     text-align: center;
@@ -165,4 +170,11 @@ img{
 }
 h3{
     font-weight: 800;
+}
+
+@media only screen and (max-width: 500px){
+    #section-popup{
+        width: 300px;
+        top: 85%;
+    }
 }
